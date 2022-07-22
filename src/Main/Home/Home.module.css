@@ -1,0 +1,14 @@
+.homeBlock {
+    min-height: 100vh;
+    background-color: #afffcd;
+}
+.intro {
+    width: 300px;
+    background-color: #b8dfc9;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: #b8dfc9;
+}

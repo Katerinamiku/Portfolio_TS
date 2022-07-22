@@ -1,0 +1,22 @@
+.portfolioBlock {
+    min-height: 100vh;
+    background-color: khaki;
+}
+
+.portfolioContainer {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    background-color: #2bff00;
+}
+
+.projects {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

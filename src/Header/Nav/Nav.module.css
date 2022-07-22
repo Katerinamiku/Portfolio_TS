@@ -1,0 +1,9 @@
+.navBlock {
+    border: 1px solid;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin-right: 40px;
+}

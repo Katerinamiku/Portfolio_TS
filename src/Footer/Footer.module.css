@@ -1,0 +1,12 @@
+.footerBlock {
+  height: 100px;
+  background-color: #280009;
+  color: antiquewhite;
+}
+
+.footerContainer {
+  min-height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}

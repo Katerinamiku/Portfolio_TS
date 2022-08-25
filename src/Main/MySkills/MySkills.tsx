@@ -2,15 +2,13 @@ import React from 'react';
 import s from './MySkills.module.css'
 import sCommon from '../../common/Styles/Container.module.css'
 import Skill from "./Skill/Skill";
+import Title from "../../common/Components/Title/Title";
 
 const MySkills = () => {
     return (
         <div className={s.mySkillsBlock}>
             <div className={` ${sCommon.container} ${s.mySkillsContainer}`}>
-                <div className={s.title}>
-                    <h2>My Skills</h2>
-                    <p>Abilities I'm using for productive work</p>
-                </div>
+                <Title title={'My skills'}/>
                 <div className={s.skills}>
                     <Skill/>
                     <Skill/>

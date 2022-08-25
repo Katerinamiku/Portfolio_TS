@@ -9,9 +9,10 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.title {
-    background-color: darkgreen;
+@media screen and (max-width: 624px) {
+    .contactMeContainer {
+        justify-content: center;
+    }
 }
 
 .contactForm {

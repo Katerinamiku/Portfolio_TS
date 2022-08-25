@@ -1,22 +1,23 @@
 import React from 'react';
 import s from './Contacts.module.css'
 import sCommon from "../../common/Styles/Container.module.css";
+import Title from "../../common/Components/Title/Title";
 
 const Contacts = () => {
     return (
         <div className={s.contactMeBlock}>
             <div className={`${sCommon.container} ${s.contactMeContainer}`}>
                 <div className={s.messageBlock}>
-                    <h2 className={s.title}>Send Message</h2>
+                    <Title title={'Send message'}/>
                     <form className={s.contactForm}>
                         <input type={'text'}/>
                         <input type={'text'}/>
                         <textarea></textarea>
                     </form>
-                    <button className={s.sendBtn}>Send Message</button>
+                    <button className={s.sendBtn} type={'submit'}>Send Message</button>
                 </div>
                 <div className={s.contactsBlock}>
-                    <h2 className={s.title}>Get in Touch</h2>
+                    <Title title={'Get in touch'}/>
                     <div className={s.contactData}>
                         <ul className={s.location}>
                             <li><span>Location</span></li>

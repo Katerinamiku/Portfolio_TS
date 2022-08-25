@@ -1,6 +1,6 @@
 .navBlock {
     border: 1px solid;
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

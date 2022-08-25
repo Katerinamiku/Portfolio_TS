@@ -1,12 +1,13 @@
 import React from 'react';
 import s from './AboutMe.module.css'
 import sCommon from '../../common/Styles/Container.module.css'
+import Title from "../../common/Components/Title/Title";
 
 const AboutMe = () => {
     return (
         <div className={s.aboutMeBlock}>
             <div className={`${sCommon.container} ${s.aboutMeContainer}`}>
-                <h2 className={s.title}>About Me</h2>
+                <Title title={'About Me'}/>
                 <div className={s.card}>
                     <div className={s.info}>
                         <div className={s.avatar}>
@@ -16,6 +17,7 @@ const AboutMe = () => {
                     </div>
                     <div className={s.description}>
                         <span>Some text about myself</span>
+                        <button>Download CV</button>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './AboutMe.module.css'
+import s from './AboutMe.module.scss'
 import sCommon from '../../common/Styles/Container.module.css'
 import Title from "../../common/Components/Title/Title";
 
@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <div className={s.card}>
                     <div className={s.info}>
                         <div className={s.avatar}>
-                            <img src={''} alt={'avatar'}/>
+                            <img src={''} alt={'main Photo'}/>
                         </div>
                         <span>Brief CV info</span>
                     </div>

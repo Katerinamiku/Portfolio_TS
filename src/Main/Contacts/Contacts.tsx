@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import sCommon from "../../common/Styles/Container.module.css";
 import Title from "../../common/Components/Title/Title";
 
@@ -10,9 +10,10 @@ const Contacts = () => {
                 <div className={s.messageBlock}>
                     <Title title={'Send message'}/>
                     <form className={s.contactForm}>
-                        <input type={'text'}/>
-                        <input type={'text'}/>
-                        <textarea></textarea>
+                        <input type={'text'} placeholder={'Name'}/>
+                        <input type={'text'} placeholder={'Email'}/>
+                        <input type={'text'} placeholder={'Subject'}/>
+                        <textarea placeholder={'Message'}></textarea>
                     </form>
                     <button className={s.sendBtn} type={'submit'}>Send Message</button>
                 </div>

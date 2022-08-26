@@ -1,6 +1,9 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
 .aboutMeBlock{
     min-height: 100vh;
-    background-color: #e4c5e7;
+    background-color: $bgPrimaryColor;
 }
 .aboutMeContainer {
     display: flex;
@@ -8,9 +11,7 @@
     align-items: center;
     flex-direction: column;
 }
-.title {
-    background-color: lightsalmon;
-}
+
 .card {
     border: 1px solid;
     width: 100%;

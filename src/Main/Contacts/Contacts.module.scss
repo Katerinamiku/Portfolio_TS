@@ -1,0 +1,67 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
+.contactMeBlock {
+  min-height: 100vh;
+  background-color: $bgPrimaryColor;
+
+  .contactMeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (max-width: 624px) {
+      justify-content: center;
+    }
+
+    .messageBlock {
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+
+      .contactForm {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 100%;
+          border: 0;
+          background: #2b2b2b;
+          height: 40px;
+          box-sizing: border-box;
+          margin: 3px;
+          @include text($TitleFontFamily, 16px, 500, 1.15,  #8d8d8d);
+        }
+        textarea {
+          width: 100%;
+          border: 0;
+          background: #2b2b2b;
+          height: 80px;
+          box-sizing: border-box;
+          margin: 3px;
+          @include text($TitleFontFamily, 16px, 500, 1.15,  #8d8d8d);
+        }
+      }
+    }
+
+    .contactsBlock {
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+
+      .socials {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

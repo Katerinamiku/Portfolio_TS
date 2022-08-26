@@ -1,13 +1,13 @@
 import React from 'react';
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 import sCommon from "../common/Styles/Container.module.css";
 
 const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={` ${sCommon.container} ${s.footerContainer}`}>
-                <h3>Name</h3>
-                <span>2022 Copyright. All Rights Reserved </span>
+                <h3 className={s.copyroghtName}>Name</h3>
+                <span className={s.copyright}>2022 Copyright. All Rights Reserved </span>
             </div>
         </div>
     );

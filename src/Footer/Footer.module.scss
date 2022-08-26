@@ -1,0 +1,22 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
+.footerBlock {
+  height: 100px;
+  background-color: $bgSecondaryColor;
+
+
+  .footerContainer {
+    min-height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.copyroghtName {
+  color: $primaryColor;
+}
+.copyright {
+  color: $textSecondaryColor;
+}

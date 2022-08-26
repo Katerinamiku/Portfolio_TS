@@ -1,0 +1,60 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
+.homeBlock {
+  min-height: 100vh;
+  background-color: $bgPrimaryColor;
+
+  .intro {
+    h1 span {
+      @include text('Coolvetica', 6rem, 800, 3rem, $textColor);
+    }
+
+    .homeDescription {
+      margin-top: 40px;
+      position: relative;
+      letter-spacing: 4px;
+      @include text($TitleFontFamily, 1.6rem, 300, 1.5rem, $textSecondaryColor);
+
+      &:before {
+        content: '<p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -1.5rem;
+        left: 1rem;
+      }
+
+      &:after {
+        content: '<p/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        left: 1rem;
+        bottom: -1.5rem;
+      }
+    }
+  }
+
+  .photo {
+    background-size: cover;
+    background-position: center;
+
+    .mainPhoto {
+      width: 400px;
+      height: 500px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

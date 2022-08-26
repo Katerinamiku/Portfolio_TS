@@ -1,0 +1,28 @@
+@import "src/common/Styles/Sass/variables.scss";
+
+.title {
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primaryColor;
+    margin-bottom: 4rem;
+    position: relative;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 5px;
+        bottom: -15px;
+        left: 50%;
+        background-color: $secondaryColor;
+        transform: translate(-50%, 50%);
+    }
+}
+
+

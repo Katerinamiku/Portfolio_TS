@@ -1,0 +1,31 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
+.navBlock {
+  min-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+
+  a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-right: 1px solid #282828;
+    transition: color 0.3s, background-color 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+    @include text($TitleFontFamily, 16, 300, 3rem, $textSecondaryColor);
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}

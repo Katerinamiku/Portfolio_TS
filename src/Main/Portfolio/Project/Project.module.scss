@@ -1,0 +1,61 @@
+@import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
+
+
+.projectBlock {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  background-color: $bgSecondaryColor;
+  box-shadow: 4px 7px 12px -3px $shadows;
+  border-radius: 5px;
+  border-top: 3px solid $primaryColor;
+
+  .imgBlock {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $shadows;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3
+    }
+  }
+
+  .textBlock {
+    padding-bottom: 10px;
+    padding-left: 15px;
+
+    .projectTitle {
+      padding-top: 15px;
+      margin-top: 0;
+      @include text($TitleFontFamily, 1.2rem, 500, 1.2, $textColor);
+    }
+
+    .projectDescription {
+      margin-top: 0;
+      @include text($TitleFontFamily, 1rem, 400, 1.5, $textSecondaryColor);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

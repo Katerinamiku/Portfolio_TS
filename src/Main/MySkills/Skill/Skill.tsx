@@ -1,12 +1,12 @@
 import React from 'react';
-import s from './Skill.module.css'
+import s from './Skill.module.scss'
 
 const Skill = () => {
     return (
         <div className={s.skillblock}>
             <img src={''} alt={'Image of skill'}/>
-            <h3>Skill</h3>
-            <span>Description</span>
+            <h3 className={s.skillName}>Skill</h3>
+            <span className={s.skillDescription}>Description</span>
         </div>
     );
 };

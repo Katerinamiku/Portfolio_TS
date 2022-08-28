@@ -22,8 +22,8 @@ const Portfolio = () => {
                     <Project title={'Social network'} description={'Project made while learning React'}
                              style={socialNetwork}/>
                 </div>
-                <div className={s.githablinking}>
-                    For more, please visit my
+                <div className={s.gitLink}>
+                   <span className={s.gitLinkText}>For more, please visit my</span>
                     <a className={s.gitBtn} href={'https://github.com/Katerinamiku'}>
                         <span>Github Page</span></a>
                 </div>

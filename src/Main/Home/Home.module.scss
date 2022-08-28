@@ -1,13 +1,40 @@
 @import "src/common/Styles/Sass/variables.scss";
 @import "src/common/Styles/Sass/mixins";
+@import "src/common/Styles/Sass/fonts.scss";
 
 .homeBlock {
   min-height: 100vh;
   background-color: $bgPrimaryColor;
 
   .intro {
-    h1 span {
-      @include text('Coolvetica', 6rem, 800, 3rem, $textColor);
+
+    .tagTop {
+      position: relative;
+
+      &:before {
+        letter-spacing: 4px;
+        @include tagBefore('<html>', -6rem, 0.3rem);
+      }
+
+      &:after {
+        letter-spacing: 4px;
+        @include tagAfter('<body>', 1rem, 3.5rem);
+      }
+    }
+
+    h1 {
+      margin-left: 50px;
+      position: relative;
+      span {
+        @include text($mainFontFamily, 6rem, 800, 3rem, $textColor);
+      }
+      &:before {
+        @include tagBefore('<h1>', -3rem, -1.4rem);
+      }
+
+      &:after {
+        @include tagAfter('<h1/>', 26rem, -1.1rem);
+      }
     }
 
     .homeDescription {
@@ -17,23 +44,11 @@
       @include text($TitleFontFamily, 1.6rem, 300, 1.5rem, $textSecondaryColor);
 
       &:before {
-        content: '<p>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #515152;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -1.5rem;
-        left: 1rem;
+        @include tagBefore('<p>', -1.5rem, 1.1rem);
       }
 
       &:after {
-        content: '<p/>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #515152;
-        font-size: 18px;
-        position: absolute;
-        left: 1rem;
-        bottom: -1.5rem;
+        @include tagAfter('<p/>', 1rem, -1.8rem);
       }
     }
   }

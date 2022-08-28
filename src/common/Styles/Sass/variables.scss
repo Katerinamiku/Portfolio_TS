@@ -1,3 +1,6 @@
+@import 'src/common/Styles/Sass/fonts.scss';
+
+
 //----Colors------
 $textColor: #fff;
 $textSecondaryColor: #909096;
@@ -5,7 +8,9 @@ $primaryColor: #08fdd8;
 $secondaryColor: #FF0820;
 $bgPrimaryColor: #1d1d1d;
 $bgSecondaryColor: #181818;
-$shadows: #083938;
+$shadows: #087266;
 
 //----Fonts-----
-$TitleFontFamily: 'Open Sans', sans-serif;
+$TitleFontFamily: 'Open Sans', serif;
+$mainFontFamily: 'Nunito Sans', sans-serif;
+

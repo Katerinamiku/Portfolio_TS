@@ -7,8 +7,8 @@ import Logo from "./Logo";
 const Header = () => {
     return (
         <div className={s.header}>
-            <Nav/>
             <Logo/>
+            <Nav/>
         </div>
     );
 };

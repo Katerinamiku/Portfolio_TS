@@ -1,10 +1,12 @@
 @import "src/common/Styles/Sass/variables.scss";
-@import "src/common/Styles/Sass/mixins";
 
 .title {
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primaryColor;
     margin-bottom: 4rem;
     position: relative;
-    @include text($mainFontFamily, 6rem, 800, 3rem, $primaryColor);
     h2 {
         font-size: 3rem;
         margin-bottom: 0.5rem;

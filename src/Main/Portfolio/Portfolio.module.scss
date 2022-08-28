@@ -1,5 +1,5 @@
 @import "../../common/Styles/Sass/variables";
-
+@import "src/common/Styles/Sass/mixins";
 .portfolioBlock {
   min-height: 100vh;
   background-color: $bgPrimaryColor;
@@ -22,33 +22,33 @@
       }
     }
 
-    .githablinking {
+    .gitLink {
       display: flex;
       align-items: center;
-      color: $textColor;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
       background: transparent;
       border: 0;
       padding: 0;
       vertical-align: baseline;
       outline: none;
 
+      .gitLinkText {
+        @include text($TitleFontFamily, 18px, 400, 1.5, $textColor);
+      }
+
       .gitBtn {
         text-decoration: none;
         display: inline-block;
-        font-family: inherit;
-        font-weight: 400;
-        border-radius: 50px;
-        border: 2px solid $primaryColor;
-        padding: 3px 10px 3px;
+        border: 1px solid $primaryColor;
+        padding: 7px 25px 6px;
         position: relative;
         overflow: hidden;
         background: transparent;
         outline: none;
         margin: 3px;
+        margin-left: 15px;
         transition: all .3s ease;
+        letter-spacing: 3px;
+        @include text($TitleFontFamily, 14px, 100, 25px, $textSecondaryColor);
 
         &::before {
           content: '';
@@ -60,13 +60,14 @@
           bottom: -5px;
           height: 0;
           transition: all .3s ease;
+          transform: skewX(-10deg)
         }
 
         &:hover:before {
           height: 125%;
         }
         &:hover span {
-            color: $textSecondaryColor;
+            color: $bgSecondaryColor;
         }
       }
 

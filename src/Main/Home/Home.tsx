@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './Home.module.scss';
-import sCommon from '../../common/Styles/Container.module.css';
+import sCommon from '../../common/Styles/Container.module.scss';
 import photoBlack from "../../common/Styles/images/avatars/photoBlack.jpg";
+import Button from "../../common/Components/Button/Button";
 
 const letter2 = require('./../../common/Styles/images/logoLetter.png');
 
@@ -27,6 +28,9 @@ const Home = () => {
                         <span className={s.blast}>e</span>
                     </h1>
                     <p className={s.homeDescription}> Front-End Developer / React-Redux Developer</p>
+                    <div className={s.CvBtnContainer}>
+                        <Button text={'Download CV'} btnHref={'#'}/>
+                    </div>
                 </div>
                 <div className={s.photo}>
                     <img src={photoBlack} alt={'main photo'} className={s.mainPhoto}/>

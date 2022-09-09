@@ -17,7 +17,7 @@
     transition: color 0.3s, background-color 0.3s;
     text-decoration: none;
     background-color: transparent;
-    @include text($TitleFontFamily, 16, 300, 3rem, $textSecondaryColor);
+    @include text($TitleFontFamily, 20px, 300, 3rem, $textSecondaryColor);
 
     &:hover {
       color: $primaryColor;

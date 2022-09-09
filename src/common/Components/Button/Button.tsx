@@ -1,14 +1,18 @@
 import React from 'react';
 import s from './Button.module.scss'
 
-type TitlePropsType = {
-    title: string
+type ButtonPropsType = {
+    text: string
+    btnHref: string
 }
 
-const Button = (props:TitlePropsType) => {
+const Button = (props:ButtonPropsType) => {
     return (
-        <div className={s.title}>
-            <h2>{props.title}</h2>
+        <div className={s.btnContainer}>
+            <span></span>
+            <a className={s.btn} href={props.btnHref}>
+                <span>{props.text}</span>
+            </a>
         </div>
 
     );

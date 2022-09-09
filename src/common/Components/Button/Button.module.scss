@@ -1,28 +1,59 @@
 @import "src/common/Styles/Sass/variables.scss";
+@import "src/common/Styles/Sass/mixins";
 
-.title {
-    font-family: inherit;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $primaryColor;
-    margin-bottom: 4rem;
-    position: relative;
-    h2 {
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        line-height: 1.2;
-        margin-top: 0;
+.btnContainer {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+
+    .btn {
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $primaryColor;
+        padding: 7px 25px 6px;
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        outline: none;
+        transition: all .3s ease;
+        letter-spacing: 3px;
+        @include text($TitleFontFamily, 14px, 100, 25px, $textSecondaryColor);
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            background-color: $primaryColor;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            height: 0;
+            transition: all .3s ease;
+            transform: skewX(-10deg)
+        }
+
+        &:hover:before {
+            height: 125%;
+        }
+        &:hover span {
+            color: $bgSecondaryColor;
+        }
     }
-    &::after {
-        position: absolute;
-        content: '';
-        width: 40px;
-        height: 5px;
-        bottom: -15px;
-        left: 50%;
-        background-color: $secondaryColor;
-        transform: translate(-50%, 50%);
+
+    span {
+        position: relative;
+        z-index: 2;
+        transition: all .3s ease;
+        background: transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        outline: none;
+        color: $textColor;
     }
 }
-
-

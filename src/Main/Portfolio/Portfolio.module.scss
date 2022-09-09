@@ -33,56 +33,7 @@
 
       .gitLinkText {
         @include text($TitleFontFamily, 18px, 400, 1.5, $textColor);
-      }
-
-      .gitBtn {
-        text-decoration: none;
-        display: inline-block;
-        border: 1px solid $primaryColor;
-        padding: 7px 25px 6px;
-        position: relative;
-        overflow: hidden;
-        background: transparent;
-        outline: none;
-        margin: 3px;
-        margin-left: 15px;
-        transition: all .3s ease;
-        letter-spacing: 3px;
-        @include text($TitleFontFamily, 14px, 100, 25px, $textSecondaryColor);
-
-        &::before {
-          content: '';
-          position: absolute;
-          z-index: 0;
-          background-color: $primaryColor;
-          left: -5px;
-          right: -5px;
-          bottom: -5px;
-          height: 0;
-          transition: all .3s ease;
-          transform: skewX(-10deg)
-        }
-
-        &:hover:before {
-          height: 125%;
-        }
-        &:hover span {
-            color: $bgSecondaryColor;
-        }
-      }
-
-      span {
-        position: relative;
-        z-index: 2;
-        transition: all .3s ease;
-        background: transparent;
-        border: 0;
-        margin: 0;
-        padding: 0;
-        vertical-align: baseline;
-        outline: none;
-        color: $textColor;
-
+        margin-right: 20px;
       }
     }
   }

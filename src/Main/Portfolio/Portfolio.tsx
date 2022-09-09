@@ -1,11 +1,12 @@
 import React from 'react';
 import s from "./Portfolio.module.scss";
-import sCommon from "../../common/Styles/Container.module.css";
+import sCommon from "../../common/Styles/Container.module.scss";
 import Project from "./Project/Project";
 import Title from "../../common/Components/Title/Title";
 import work1 from "../../common/Styles/images/projects/work1.jpg";
 import work2 from "../../common/Styles/images/projects/work2.jpg";
 import sn from "../../common/Styles/images/projects/sn.jpg";
+import Button from "../../common/Components/Button/Button";
 
 const Portfolio = () => {
     const maroonProject = {backgroundImage: `url(${work2})`,};
@@ -23,9 +24,8 @@ const Portfolio = () => {
                              style={socialNetwork}/>
                 </div>
                 <div className={s.gitLink}>
-                   <span className={s.gitLinkText}>For more, please visit my</span>
-                    <a className={s.gitBtn} href={'https://github.com/Katerinamiku'}>
-                        <span>Github Page</span></a>
+                    <span className={s.gitLinkText}>For more, please, visit my</span>
+                  <Button text={'GitHub Page'} btnHref={'https://github.com/Katerinamiku'} />
                 </div>
             </div>
         </div>

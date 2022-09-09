@@ -1,12 +1,19 @@
 import React from 'react';
 import s from './Skill.module.scss'
+import {SkillsNameType, SvgSelector} from "../../../common/Components/svgSelector/svgSelector";
 
-const Skill = () => {
+type SkillPropsType = {
+    skillName: SkillsNameType
+    description: string
+}
+
+
+const Skill = (props: SkillPropsType) => {
     return (
         <div className={s.skillblock}>
-            <img src={''} alt={'Image of skill'}/>
-            <h3 className={s.skillName}>Skill</h3>
-            <span className={s.skillDescription}>Description</span>
+            <SvgSelector skillName={props.skillName}/>
+            <h3 className={s.skillName}>{props.skillName}</h3>
+            <span className={s.skillDescription}>{props.description}</span>
         </div>
     );
 };

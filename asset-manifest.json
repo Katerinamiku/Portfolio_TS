@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio_TS/static/css/main.367fb7d0.css",
-    "main.js": "/Portfolio_TS/static/js/main.a3ade095.js",
+    "main.css": "/Portfolio_TS/static/css/main.a8f8c715.css",
+    "main.js": "/Portfolio_TS/static/js/main.3768d2bb.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js",
     "static/media/photoBlack.jpg": "/Portfolio_TS/static/media/photoBlack.6bb564e4f81ac78a75d6.jpg",
+    "static/media/cards.jpg": "/Portfolio_TS/static/media/cards.6efd0cb8a361909bb56b.jpg",
     "static/media/work1.jpg": "/Portfolio_TS/static/media/work1.8d3b9441c68b8ff1ce31.jpg",
     "static/media/work2.jpg": "/Portfolio_TS/static/media/work2.fcdeb77b7842fb5ada21.jpg",
     "static/media/sn.jpg": "/Portfolio_TS/static/media/sn.15ebad6c34e7c07a978f.jpg",
+    "static/media/Coolvetica.ttf": "/Portfolio_TS/static/media/Coolvetica.8b00c1ffef613c4a9dfa.ttf",
     "static/media/logo2.png": "/Portfolio_TS/static/media/logo2.833a8b91f7e37ec82983.png",
     "static/media/logoLetter.png": "/Portfolio_TS/static/media/logoLetter.4ac5763ec94418a6ac0a.png",
+    "static/media/todolist.jpg": "/Portfolio_TS/static/media/todolist.e4456090ccea2621537c.jpg",
     "index.html": "/Portfolio_TS/index.html",
-    "main.367fb7d0.css.map": "/Portfolio_TS/static/css/main.367fb7d0.css.map",
-    "main.a3ade095.js.map": "/Portfolio_TS/static/js/main.a3ade095.js.map",
+    "main.a8f8c715.css.map": "/Portfolio_TS/static/css/main.a8f8c715.css.map",
+    "main.3768d2bb.js.map": "/Portfolio_TS/static/js/main.3768d2bb.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.367fb7d0.css",
-    "static/js/main.a3ade095.js"
+    "static/css/main.a8f8c715.css",
+    "static/js/main.3768d2bb.js"
   ]
 }

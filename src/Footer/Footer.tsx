@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={` ${sCommon.container} ${s.footerContainer}`}>
-                <h3 className={s.copyroghtName}>Name</h3>
+                <h3 className={s.copyrightName}>Kate Karpovich</h3>
                 <span className={s.copyright}>2022 Copyright. All Rights Reserved </span>
             </div>
         </div>

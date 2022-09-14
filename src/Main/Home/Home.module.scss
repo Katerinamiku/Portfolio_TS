@@ -1,9 +1,9 @@
 @import "src/common/Styles/Sass/variables.scss";
 @import "src/common/Styles/Sass/mixins";
-@import "src/common/Styles/Sass/fonts.scss";
 
 .homeBlock {
   min-height: 100vh;
+  padding-top: 4em;
   background-color: $bgPrimaryColor;
 
   .intro {
@@ -26,7 +26,7 @@
       margin-left: 50px;
       position: relative;
       span {
-        @include text($mainFontFamily, 6rem, 800, 3rem, $textColor);
+        @include text($mainFontFamily, 7rem, 800, 3rem, $textColor);
       }
       &:before {
         @include tagBefore('<h1>', -3rem, -1.4rem);

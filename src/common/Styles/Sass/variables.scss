@@ -1,16 +1,20 @@
-@import 'src/common/Styles/Sass/fonts.scss';
-
 
 //----Colors------
 $textColor: #fff;
 $textSecondaryColor: #909096;
 $primaryColor: #08fdd8;
-$secondaryColor: #FF0820;
+$secondaryColor: #FD2155;
 $bgPrimaryColor: #1d1d1d;
 $bgSecondaryColor: #181818;
-$shadows: #087266;
+$shadows: #001414;
 
 //----Fonts-----
 $TitleFontFamily: 'Open Sans', serif;
-$mainFontFamily: 'Nunito Sans', sans-serif;
+$mainFontFamily: 'Coolvetica', sans-serif;
 
+@font-face {
+  font-family: 'Coolvetica';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Coolvetica.ttf');
+}

@@ -3,9 +3,12 @@
 
 .contactMeBlock {
   min-height: 100vh;
+  padding-top: 4em;
+
   background-color: $bgPrimaryColor;
 
   .contactMeContainer {
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -19,11 +22,14 @@
       border: 1px solid;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 400px;
 
       .contactForm {
         border: 1px solid;
         display: flex;
         flex-direction: column;
+
         input {
           width: 100%;
           border: 0;
@@ -31,8 +37,9 @@
           height: 40px;
           box-sizing: border-box;
           margin: 3px;
-          @include text($TitleFontFamily, 16px, 500, 1.15,  #8d8d8d);
+          @include text($TitleFontFamily, 16px, 500, 1.15, #8d8d8d);
         }
+
         textarea {
           width: 100%;
           border: 0;
@@ -40,7 +47,7 @@
           height: 80px;
           box-sizing: border-box;
           margin: 3px;
-          @include text($TitleFontFamily, 16px, 500, 1.15,  #8d8d8d);
+          @include text($TitleFontFamily, 16px, 500, 1.15, #8d8d8d);
         }
       }
     }
@@ -49,11 +56,32 @@
       border: 1px solid;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 350px;
+
+      .contactData {
+        @include text($TitleFontFamily, 1.2rem, 400, 1.5, $textSecondaryColor);
+
+        .contactElement {
+          display: flex;
+          flex-direction: row;
+          padding: 5px;
+
+          span {
+            padding-left: 10px;
+          }
+        }
+      }
 
       .socials {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 10px;
+
+        a {
+          padding: 10px;
+        }
       }
     }
   }

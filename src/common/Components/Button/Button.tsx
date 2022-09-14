@@ -3,7 +3,7 @@ import s from './Button.module.scss'
 
 type ButtonPropsType = {
     text: string
-    btnHref: string
+    btnHref?: string
 }
 
 const Button = (props:ButtonPropsType) => {

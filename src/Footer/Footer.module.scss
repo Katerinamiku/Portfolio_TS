@@ -5,7 +5,6 @@
   height: 100px;
   background-color: $bgSecondaryColor;
 
-
   .footerContainer {
     min-height: 100px;
     justify-content: flex-start;
@@ -14,8 +13,9 @@
   }
 }
 
-.copyroghtName {
+.copyrightName {
   color: $primaryColor;
+  @include text($mainFontFamily, 1.3rem, 800, 1rem, $primaryColor);
 }
 .copyright {
   color: $textSecondaryColor;

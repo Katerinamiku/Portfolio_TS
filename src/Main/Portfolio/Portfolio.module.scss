@@ -1,5 +1,6 @@
 @import "../../common/Styles/Sass/variables";
 @import "src/common/Styles/Sass/mixins";
+
 .portfolioBlock {
   min-height: 100vh;
   background-color: $bgPrimaryColor;
@@ -11,29 +12,27 @@
     flex-direction: column;
 
     .projects {
-      border: 1px solid;
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
+      margin-bottom: 30px;
       @media screen and (max-width: 624px) {
         justify-content: center;
       }
     }
 
     .gitLink {
+      width: 350px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      background: transparent;
-      border: 0;
-      padding: 0;
-      vertical-align: baseline;
-      outline: none;
+      padding-top: 100px;
 
       .gitLinkText {
         @include text($TitleFontFamily, 18px, 400, 1.5, $textColor);
-        margin-right: 20px;
+        margin-bottom: 20px;
       }
     }
   }

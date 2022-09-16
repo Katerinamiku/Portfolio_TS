@@ -1,27 +1,27 @@
 @import "src/common/Styles/Sass/variables.scss";
 @import "src/common/Styles/Sass/mixins";
 
-.mySkillsBlock{
-    min-height: 100vh;
-    padding-top: 4em;
-    background-color: $bgPrimaryColor;
-    .mySkillsContainer {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
+.mySkillsBlock {
+  min-height: 100vh;
+  padding-top: 4em;
+  background-color: $bgPrimaryColor;
 
-        .skills {
-
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            @media screen and (max-width: 624px) {
-                    justify-content: center;
-            }
-        }
+  .mySkillsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 624px) {
+        justify-content: center;
+      }
     }
+  }
 }
 
 

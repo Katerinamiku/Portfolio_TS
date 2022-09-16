@@ -17,9 +17,9 @@ const Portfolio = () => {
     const todolist = {backgroundImage: `url(${todo})`,};
     const cards = {backgroundImage: `url(${cardsApp})`,};
     return (
-        <div className={s.portfolioBlock}>
+        <div className={s.portfolioBlock} id={'projects'}>
             <div className={` ${sCommon.container} ${s.portfolioContainer}`}>
-                <Title title={"Portfolio"}/>
+                <Title title={"Projects"}/>
                 <div className={s.projects}>
                     <Project title={'Maroon cosmetics'} description={'My first project with' +
                         ' Figma'} style={maroonProject}/>

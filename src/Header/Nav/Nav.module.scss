@@ -1,6 +1,11 @@
 @import "src/common/Styles/Sass/variables.scss";
 @import "src/common/Styles/Sass/mixins";
 
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
 .navBlock {
   min-width: 600px;
   display: flex;
@@ -8,24 +13,79 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-
-  a {
-    text-align: center;
-    width: 100%;
-    display: block;
-    border-right: 1px solid #282828;
-    transition: color 0.3s, background-color 0.3s;
-    text-decoration: none;
-    background-color: transparent;
-    @include text($TitleFontFamily, 20px, 300, 3rem, $textSecondaryColor);
-
-    &:hover {
-      color: $primaryColor;
-    }
+  @media screen and (max-width: 731px) {
+    visibility: hidden;
   }
 }
 
-.logo img {
-  width: 80px;
-  height: 80px;
+.navBlock a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-right: 1px solid #282828;
+  transition: color 0.3s, background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+  @include text($TitleFontFamily, 20px, 300, 3rem, $textSecondaryColor);
+
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.navigationMenu {
+  display: flex;
+}
+
+.hambMenu {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+  @media screen and (max-width: 731px) {
+    visibility: visible;
+  }
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  transition: 0.5s;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  background-color: $bgSecondaryColor;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+//.menuActive {
+//  display: flex;
+//  flex-direction: column;
+//  width: 150px;
+//  height: 200px;
+//  background-color: $bgSecondaryColor;
+//}
+
+.menu a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-right: 1px solid #282828;
+  transition: color 0.3s, background-color 0.3s;
+  text-decoration: none;
+  background-color: transparent;
+  @include text($TitleFontFamily, 20px, 300, 3rem, $textSecondaryColor);
+
+  &:hover {
+    color: $primaryColor;
+  }
 }

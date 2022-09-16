@@ -8,7 +8,7 @@ const letter2 = require('./../../common/Styles/images/logoLetter.png');
 
 const Home = () => {
     return (
-        <div className={s.homeBlock}>
+        <div className={s.homeBlock} id={'home'}>
             <div className={` ${sCommon.container} ${s.homeContainer}`}>
                 <div className={s.intro}>
                 <span className={s.tagTop}>
@@ -21,8 +21,7 @@ const Home = () => {
                         <span className={s.blast}>I</span>
                         <span className={s.blast}>'</span>
                         <span className={s.blast}>m </span>
-                        <span><img width="80" height="95"
-                                   src={letter2} alt={"Name"} className={s.animationLogo}/></span>
+                        <img src={letter2} alt={"Name"} className={s.animationLogo}/>
                         <span className={s.blast}>a</span>
                         <span className={s.blast}>t</span>
                         <span className={s.blast}>e</span>
@@ -35,7 +34,14 @@ const Home = () => {
                 <div className={s.photo}>
                     <img src={photoBlack} alt={'main photo'} className={s.mainPhoto}/>
                 </div>
+                <svg className={s.arrows}>
+                    <path className={s.a1} d={"M0 0 L30 32 L60 0"}></path>
+                    <path className={s.a2} d={"M0 20 L30 52 L60 20"}></path>
+                    <path className={s.a3} d={"M0 40 L30 72 L60 40"}></path>
+                </svg>
             </div>
+
+
         </div>
     );
 };

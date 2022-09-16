@@ -13,6 +13,7 @@
     border-radius: 5px;
     border-top: 3px solid $primaryColor;
     margin-bottom: 30px;
+    margin-right: 20px;
     padding-top: 15px;
     .skillName {
         @include text($TitleFontFamily, 1.2rem, 500, 1.2, $textColor);

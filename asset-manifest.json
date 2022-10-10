@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio_TS/static/css/main.478a984d.css",
-    "main.js": "/Portfolio_TS/static/js/main.5fe4d245.js",
+    "main.css": "/Portfolio_TS/static/css/main.1f97321e.css",
+    "main.js": "/Portfolio_TS/static/js/main.f035d171.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js",
     "static/media/photoBlack.jpg": "/Portfolio_TS/static/media/photoBlack.6bb564e4f81ac78a75d6.jpg",
     "static/media/cards.jpg": "/Portfolio_TS/static/media/cards.6efd0cb8a361909bb56b.jpg",
     "static/media/work1.jpg": "/Portfolio_TS/static/media/work1.8d3b9441c68b8ff1ce31.jpg",
+    "static/media/KateKarpovichCV.pdf": "/Portfolio_TS/static/media/KateKarpovichCV.a7b4f81466ec0a7e1139.pdf",
     "static/media/work2.jpg": "/Portfolio_TS/static/media/work2.fcdeb77b7842fb5ada21.jpg",
     "static/media/sn.jpg": "/Portfolio_TS/static/media/sn.15ebad6c34e7c07a978f.jpg",
     "static/media/Coolvetica.ttf": "/Portfolio_TS/static/media/Coolvetica.8b00c1ffef613c4a9dfa.ttf",
@@ -13,12 +14,12 @@
     "static/media/logoLetter.png": "/Portfolio_TS/static/media/logoLetter.4ac5763ec94418a6ac0a.png",
     "static/media/todolist.jpg": "/Portfolio_TS/static/media/todolist.e4456090ccea2621537c.jpg",
     "index.html": "/Portfolio_TS/index.html",
-    "main.478a984d.css.map": "/Portfolio_TS/static/css/main.478a984d.css.map",
-    "main.5fe4d245.js.map": "/Portfolio_TS/static/js/main.5fe4d245.js.map",
+    "main.1f97321e.css.map": "/Portfolio_TS/static/css/main.1f97321e.css.map",
+    "main.f035d171.js.map": "/Portfolio_TS/static/js/main.f035d171.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.478a984d.css",
-    "static/js/main.5fe4d245.js"
+    "static/css/main.1f97321e.css",
+    "static/js/main.f035d171.js"
   ]
 }

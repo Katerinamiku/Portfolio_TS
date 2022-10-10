@@ -5,9 +5,10 @@ import photoBlack from "../../common/Styles/images/avatars/photoBlack.jpg";
 import Button from "../../common/Components/Button/Button";
 
 const letter2 = require('./../../common/Styles/images/logoLetter.png');
+const cv = require('./KateKarpovichCV.pdf');
 
 const Home = () => {
-    return (
+return (
         <div className={s.homeBlock} id={'home'}>
             <div className={` ${sCommon.container} ${s.homeContainer}`}>
                 <div className={s.intro}>
@@ -26,9 +27,9 @@ const Home = () => {
                         <span className={s.blast}>t</span>
                         <span className={s.blast}>e</span>
                     </h1>
-                    <p className={s.homeDescription}> Front-End Developer / React-Redux Developer</p>
+                    <p className={s.homeDescription}> Front-End Developer</p>
                     <div className={s.CvBtnContainer}>
-                        <Button text={'Download CV'} btnHref={'#'}/>
+                        <Button text={'Download CV'} btnHref={cv} download={'Kate Karpovich CV'}/>
                     </div>
                 </div>
                 <div className={s.photo}>

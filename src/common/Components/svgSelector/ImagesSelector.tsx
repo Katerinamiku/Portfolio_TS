@@ -11,9 +11,9 @@ import facebook from '../../Styles/Icons/social/facebook-50.png'
 import github from '../../Styles/Icons/social/github-50.png'
 import linkedin from '../../Styles/Icons/social/linkedin-circled-50.png'
 import telegram from '../../Styles/Icons/social/telegram-50.png'
-import email from '../../Styles/Icons/conacts/mail-25.png'
-import telephone from '../../Styles/Icons/conacts/phone-25.png'
-import locationCountry from '../../Styles/Icons/conacts/ocation-25.png'
+import email from '../../Styles/Icons/contacts/mail-25.png'
+import telephone from '../../Styles/Icons/contacts/phone-25.png'
+import locationCountry from '../../Styles/Icons/contacts/ocation-25.png'
 
 export type contactIconsType = 'Facebook' | 'Github' | "Telegram" | 'Linkedin' | 'Email' | 'Tel' | 'Location';
 export type skillIconNameType = 'Web-design' | 'Languages' | 'React' | 'Redux' | 'Server API' | 'Web-development' | 'Testing' | 'Personal goals' | 'Social skills' ;

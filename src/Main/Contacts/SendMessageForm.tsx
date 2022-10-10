@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import {useFormik} from 'formik';
 import s from './SendMessageForm.module.scss';
 import Button from "../../common/Components/Button/Button";
+import emailjs from '@emailjs/browser';
 
 type FormikErrorsType = {
     name?: string
@@ -15,10 +16,20 @@ type FormDataType = {
 }
 
 export const SendMessageForm = () => {
-    const [disabled, setDisabled] = useState(false)
+    const [disabled, setDisabled] = useState(false);
+    const form = useRef<any>();
     const sendEmail = (e: FormDataType) => {
+
         setDisabled(true)
-        //запрос setDisabled(false)
+        emailjs.sendForm('service_b0jgn1q', 'template_yu9zlx6', form.current, '0LpFYplVJotUW863l')
+            .then((result) => {
+                console.log(result.text)
+                setDisabled(false)
+                alert('Message sent')
+            })
+            .catch((error) => {
+                alert(error.text);
+            })
     };
 
     const formik = useFormik({
@@ -41,7 +52,7 @@ export const SendMessageForm = () => {
             }
             if (!values.name) {
                 errors.name = 'Name is required'
-            } else if (values.name.length < 10) {
+            } else if (values.name.length < 2) {
                 errors.name = 'Enter valid name'
             }
             return errors
@@ -52,13 +63,13 @@ export const SendMessageForm = () => {
                 email: values.email.trim(),
                 message: values.message
             })
-            formik.resetForm()
+            formik.resetForm();
         },
     });
 
     return (
         <div className={s.form}>
-            <form onSubmit={formik.handleSubmit}>
+            <form ref={form} onSubmit={formik.handleSubmit}>
                 <div className={s.error}>
                     {formik.errors.name && formik.touched.name &&
                         <div>{formik.errors.name}</div>}
@@ -82,12 +93,9 @@ export const SendMessageForm = () => {
 
                 <textarea{...formik.getFieldProps('message')}
                          name="message" placeholder={'Enter your message'}/>
-                <div className={s.submitButton}><Button text={'Send'} type={'submit'}/></div>
-                {/*<button type={'submit'} value={'Send'} className={disabled ? s.disabled: s.submitButton}*/}
-                {/*    >*/}
-                {/*    {disabled ? 'Sending...': 'Send'}*/}
-                {/*</button>*/}
-
+                <div className={s.submitButton}>
+                    <Button text={disabled ? 'Sending...': 'Send'} type={'submit'}/>
+                </div>
             </form>
         </div>
     );

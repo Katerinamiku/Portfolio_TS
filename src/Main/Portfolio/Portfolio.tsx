@@ -22,18 +22,19 @@ const Portfolio = () => {
                 <Title title={"Projects"}/>
                 <div className={s.projects}>
                     <Project title={'Maroon cosmetics'} description={'My first project with' +
-                        ' Figma'} style={maroonProject}/>
-                    <Project title={'Visit page'} description={'Learning to work with Bootstrap'} style={visitPage}/>
-                    <Project title={'Social network'} description={'Project made while learning React'}
-                             style={socialNetwork}/>
+                        ' Figma'} style={maroonProject} projectHref={'https://katerinamiku.github.io/MaroonProject/index.html'}/>
+                    <Project title={'Page for marketing company'} description={'Learning to work with' +
+                        ' Bootstrap'} style={visitPage} projectHref={'https://katerinamiku.github.io/bootstrapCite/index.html'}/>
+                    <Project title={'Social network'} description={'Project, made to implement different React tools'}
+                             style={socialNetwork} projectHref={''}/>
                     <Project title={'Todolist App'} description={'Simple task management application'}
-                             style={todolist}/>
-                    <Project title={'Learning cards'} description={'Application for better studying using memory cards'}
-                             style={cards}/>
+                             style={todolist} projectHref={''}/>
+                    <Project title={'Learning cards'} description={'Application for studying using memory' +
+                        ' cards (in progress)'}
+                             style={cards} projectHref={''}/>
 
                     <div className={s.gitLink}>
                         <span className={s.gitLinkText}>For more, please, visit my</span>
-
                         <Button text={'GitHub Page'} btnHref={'https://github.com/Katerinamiku'}/>
                     </div>
 

@@ -10,7 +10,9 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    padding-top: 50px;
     @media screen and (max-width: 1377px) {
+      padding-top: 150px;
       justify-content: center;
     }
 
@@ -42,10 +44,10 @@
           transition: all 0.3s ease-out;
           @include text($mainFontFamily, 7rem, 800, 3rem, $textColor);
           @media screen and (max-width: 544px) {
-            @include text($mainFontFamily, 5rem, 800, 3rem, $textColor)
+            @include text($mainFontFamily, 6rem, 800, 3rem, $textColor)
           }
           @media screen and (max-width: 421px) {
-            @include text($mainFontFamily, 3rem, 800, 3rem, $textColor)
+            @include text($mainFontFamily, 5rem, 800, 3rem, $textColor)
           }
 
           &:hover {
@@ -54,7 +56,6 @@
             animation: rubberBand 0.7s both;
             -webkit-animation: rubberBand 0.7s both;
           }
-
               @keyframes rubberBand {
                 0% {
                   -webkit-transform: scale3d(1, 1, 1);
@@ -107,15 +108,15 @@
         }
         .animationLogo {
           padding-left: 30px;
-          width: 75px;
-          height: 100px;
+          width: 85px;
+          height: 110px;
           @media screen and (max-width: 544px) {
-            width: 55px;
-            height: 70px;
+            width: 65px;
+            height: 90px;
           }
           @media screen and (max-width: 421px) {
-            width: 35px;
-            height: 50px;
+            width: 55px;
+            height: 70px;
           }
         }
       }

@@ -6,7 +6,6 @@
   width: 350px;
   display: flex;
   flex-direction: column;
-  background-color: $bgSecondaryColor;
 
   .imgBlock {
     height: 280px;
@@ -17,6 +16,10 @@
     background-position: center;
     position: relative;
 
+    .circle {
+      visibility: hidden;
+    }
+
     &::before {
       position: absolute;
       content: '';
@@ -25,7 +28,33 @@
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0.4
+      opacity: 0.4;
+    }
+
+    &:hover {
+      .circle {
+        visibility: visible;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 200ms ease-out;
+        .viewLink {
+          transition: all 400ms ease-out;
+          text-decoration: none;
+          letter-spacing: 3px;
+          @include text($TitleFontFamily, 18px, 500, 25px, $bgPrimaryColor);
+        }
+      }
+
+      &::before {
+        background: none;
+        transition: all .4s ease;
+      }
     }
   }
 

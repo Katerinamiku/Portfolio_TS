@@ -34,17 +34,17 @@ const Contacts = () => {
                         </div>
 
                         <div className={s.socials}>
-                            <a href="https://www.facebook.com/katerina.beregeiko">
+                            <a href="https://www.facebook.com/katerina.beregeiko" target="_blank">
                                 <img src={faceBookIcon} alt="facebook"/>
                             </a>
-                            <a href="https://github.com/Katerinamiku">
+                            <a href="https://github.com/Katerinamiku" target="_blank">
                                 <img src={gitHubIcon} alt="github"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/kate-karpovich-49a57750/">
+                            <a href="https://www.linkedin.com/in/kate-karpovich-49a57750/" target="_blank">
                                 <img src={LinkedinIcon} alt="linkedin"/>
                             </a>
-                            <a href="https://t.me/Kate_kar">
-                                <img src={telegramIcon} alt="telegram"/>
+                            <a href="https://t.me/Kate_kar" target="_blank">
+                                <img src={telegramIcon} alt="telegram" />
                             </a>
                         </div>
                     </div>

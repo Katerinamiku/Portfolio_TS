@@ -22,7 +22,7 @@ return (
                         <span className={s.blast}>I</span>
                         <span className={s.blast}>'</span>
                         <span className={s.blast}>m </span>
-                        <img src={letter2} alt={"Name"} className={s.animationLogo}/>
+                        <img src={letter2} alt={"K"} className={s.animationLogo}/>
                         <span className={s.blast}>a</span>
                         <span className={s.blast}>t</span>
                         <span className={s.blast}>e</span>

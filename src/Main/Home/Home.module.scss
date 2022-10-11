@@ -3,17 +3,20 @@
 
 .homeBlock {
   min-height: 100vh;
-  padding-top: 4em;
+  padding-top: 50px;
   background-color: $bgPrimaryColor;
 
   .homeContainer {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 75%;
     padding-top: 50px;
     @media screen and (max-width: 1377px) {
       padding-top: 150px;
       justify-content: center;
+    }
+    @media screen and (max-width: 689px) {
+      width: 95%;
     }
 
     .intro {
@@ -43,7 +46,7 @@
           -o-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
           @include text($mainFontFamily, 7rem, 800, 3rem, $textColor);
-          @media screen and (max-width: 544px) {
+          @media screen and (max-width: 545px) {
             @include text($mainFontFamily, 6rem, 800, 3rem, $textColor)
           }
           @media screen and (max-width: 421px) {
@@ -110,7 +113,7 @@
           padding-left: 30px;
           width: 85px;
           height: 110px;
-          @media screen and (max-width: 544px) {
+          @media screen and (max-width: 641px) {
             width: 65px;
             height: 90px;
           }
@@ -126,9 +129,9 @@
         position: relative;
         letter-spacing: 4px;
         @include text($TitleFontFamily, 1.6rem, 300, 1.5rem, $textSecondaryColor);
-        @media screen and (max-width: 544px) {
+        @media screen and (max-width: 554px) {
           @include text($TitleFontFamily, 1.2rem, 300, 1.5rem, $textSecondaryColor);
-          margin-left: 30px;
+          margin-left: 0;
         }
 
         &:before {

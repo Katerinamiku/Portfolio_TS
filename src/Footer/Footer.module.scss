@@ -17,6 +17,7 @@
   color: $primaryColor;
   @include text($mainFontFamily, 1.3rem, 800, 1rem, $primaryColor);
 }
+
 .copyright {
   color: $textSecondaryColor;
 }

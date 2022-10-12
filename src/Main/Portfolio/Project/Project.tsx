@@ -12,11 +12,11 @@ const Project = (props: ProjectPropsType) => {
 
     return (
         <div className={s.projectBlock}>
-            <div className={s.imgBlock} style={props.style} >
+            <a className={s.imgBlock} style={props.style} href={props.projectHref} target="_blank">
                     <div className={s.circle}>
-                        <a href={props.projectHref} className={s.viewLink} target="_blank">View</a>
+                        <div  className={s.viewLink} >View</div>
                     </div>
-            </div>
+            </a>
             <div className={s.textBlock}>
                 <div className={s.projectTitle}>{props.title}</div>
                 <span className={s.projectDescription}>{props.description}</span>

@@ -7,7 +7,7 @@ import work1 from "../../common/Styles/images/projects/work1.jpg";
 import work2 from "../../common/Styles/images/projects/work2.jpg";
 import sn from "../../common/Styles/images/projects/sn.jpg";
 import todo from "../../common/Styles/images/projects/todolist.jpg";
-import cardsApp from "../../common/Styles/images/projects/cards.jpg";
+import clickApp from "../../common/Styles/images/projects/clickcounter.jpg";
 import Button from "../../common/Components/Button/Button";
 
 const Portfolio = () => {
@@ -15,24 +15,26 @@ const Portfolio = () => {
     const visitPage = {backgroundImage: `url(${work1})`,};
     const socialNetwork = {backgroundImage: `url(${sn})`,};
     const todolist = {backgroundImage: `url(${todo})`,};
-    const cards = {backgroundImage: `url(${cardsApp})`,};
+    const clickcounter = {backgroundImage: `url(${clickApp})`,};
     return (
         <div className={s.portfolioBlock} id={'projects'}>
             <div className={` ${sCommon.container} ${s.portfolioContainer}`}>
                 <Title title={"Projects"}/>
                 <div className={s.projects}>
-                    <Project title={'Maroon cosmetics'} description={'My first project with' +
-                        ' Figma'} style={maroonProject} projectHref={'https://katerinamiku.github.io/MaroonProject/index.html'}/>
-                    <Project title={'Page for marketing company'} description={'Learning to work with' +
-                        ' Bootstrap'} style={visitPage} projectHref={'https://katerinamiku.github.io/bootstrapCite/index.html'}/>
-                    <Project title={'Social network'} description={'Project, made to implement different React tools'}
-                             style={socialNetwork} projectHref={''}/>
-                    <Project title={'Todolist App'} description={'Simple task management application'}
-                             style={todolist} projectHref={''}/>
-                    <Project title={'Learning cards'} description={'Application for studying using memory' +
-                        ' cards (in progress)'}
-                             style={cards} projectHref={''}/>
-
+                    <Project title={'Todolist App'} description={'Simple task management application.' +
+                        ' Actions with task lists and tasks. Switch to dark/light mode'}
+                             style={todolist} projectHref={'https://katerinamiku.github.io/todolist'}/>
+                    <Project title={'Social network'} description={'Basic social' +
+                        ' network functionality such as login/logout, pagination, profile page, messages, etc on' +
+                        ' React.'}
+                             style={socialNetwork} projectHref={'https://katerinamiku.github.io/samuraiLessons'}/>
+                    <Project title={'Click Counter'} description={'Simple click counter made using React and' +
+                        ' typescript with local storage'}
+                             style={clickcounter} projectHref={'https://katerinamiku.github.io/ClickCounter'}/>
+                    <Project title={'Maroon cosmetics'} description={'Simple draft HTML page. Study project' +
+                        ' made using Figma'} style={maroonProject} projectHref={'https://katerinamiku.github.io/MaroonProject/index.html'}/>
+                    <Project title={'Page for marketing company'} description={'Draft page for marketing company' +
+                        ' services was made like a study project to learn Bootstrap'} style={visitPage} projectHref={'https://katerinamiku.github.io/bootstrapCite/index.html'}/>
                     <div className={s.gitLink}>
                         <span className={s.gitLinkText}>For more, please, visit my</span>
                         <Button text={'GitHub Page'} btnHref={'https://github.com/Katerinamiku'}/>

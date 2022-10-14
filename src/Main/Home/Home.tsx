@@ -5,7 +5,7 @@ import photoBlack from "../../common/Styles/images/avatars/photoBlack.jpg";
 import Button from "../../common/Components/Button/Button";
 
 const letter2 = require('./../../common/Styles/images/logoLetter.png');
-const cv = require('./KateKarpovichCV.pdf');
+const cv = require('./Kate KarpovichCV.pdf');
 
 const Home = () => {
 return (

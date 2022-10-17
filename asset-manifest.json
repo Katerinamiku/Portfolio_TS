@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Portfolio_TS/static/css/main.2cb1b89e.css",
-    "main.js": "/Portfolio_TS/static/js/main.514d61ef.js",
+    "main.js": "/Portfolio_TS/static/js/main.30d358f6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js",
     "static/media/photoBlack.jpg": "/Portfolio_TS/static/media/photoBlack.6bb564e4f81ac78a75d6.jpg",
     "static/media/work1.jpg": "/Portfolio_TS/static/media/work1.a94d96c7a84c231f9401.jpg",
-    "static/media/Kate KarpovichCV.pdf": "/Portfolio_TS/static/media/Kate KarpovichCV.0a676fc1b0c0b380cf74.pdf",
+    "static/media/KateKarpovichCV.pdf": "/Portfolio_TS/static/media/KateKarpovichCV.b1c021f5a3b48e6013c9.pdf",
     "static/media/work2.jpg": "/Portfolio_TS/static/media/work2.9e2d354a89e31ae8ded5.jpg",
+    "static/media/sn.jpg": "/Portfolio_TS/static/media/sn.075f0ab192c94eef92b5.jpg",
     "static/media/todolist.jpg": "/Portfolio_TS/static/media/todolist.67115c86d5a4e41517c8.jpg",
-    "static/media/sn.jpg": "/Portfolio_TS/static/media/sn.15ebad6c34e7c07a978f.jpg",
     "static/media/Coolvetica.ttf": "/Portfolio_TS/static/media/Coolvetica.8b00c1ffef613c4a9dfa.ttf",
     "static/media/clickcounter.jpg": "/Portfolio_TS/static/media/clickcounter.fa58a1deed6a903fb076.jpg",
     "static/media/logo2.png": "/Portfolio_TS/static/media/logo2.833a8b91f7e37ec82983.png",
     "static/media/logoLetter.png": "/Portfolio_TS/static/media/logoLetter.4ac5763ec94418a6ac0a.png",
     "index.html": "/Portfolio_TS/index.html",
     "main.2cb1b89e.css.map": "/Portfolio_TS/static/css/main.2cb1b89e.css.map",
-    "main.514d61ef.js.map": "/Portfolio_TS/static/js/main.514d61ef.js.map",
+    "main.30d358f6.js.map": "/Portfolio_TS/static/js/main.30d358f6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio_TS/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2cb1b89e.css",
-    "static/js/main.514d61ef.js"
+    "static/js/main.30d358f6.js"
   ]
 }

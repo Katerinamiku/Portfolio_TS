@@ -8,13 +8,15 @@ import LinkedinIcon from "../../common/Styles/Icons/social/linkedin-circled-50.p
 import telegramIcon from "../../common/Styles/Icons/social/telegram-50.png"
 import {ImagesSelector} from "../../common/Components/svgSelector/ImagesSelector";
 import {SendMessageForm} from "./SendMessageForm";
+import {Fade} from 'react-awesome-reveal';
 
 
 const Contacts = () => {
     return (
         <div className={s.contactMeBlock} id={'contacts'}>
-            <div className={`${sCommon.container} ${s.contactMeContainer}`}>
-                {/*<div className={s.contactsCard}>*/}
+            <Fade cascade={true} damping={0.5}>
+                <div className={`${sCommon.container} ${s.contactMeContainer}`}>
+                    {/*<div className={s.contactsCard}>*/}
                     <div className={s.messageBlock}>
                         <Title title={'Send message'}/>
                         <SendMessageForm/>
@@ -44,12 +46,13 @@ const Contacts = () => {
                                 <img src={LinkedinIcon} alt="linkedin"/>
                             </a>
                             <a href="https://t.me/Kate_kar" target="_blank">
-                                <img src={telegramIcon} alt="telegram" />
+                                <img src={telegramIcon} alt="telegram"/>
                             </a>
                         </div>
                     </div>
                 </div>
-            {/*</div>*/}
+                {/*</div>*/}
+            </Fade>
         </div>
     )
         ;

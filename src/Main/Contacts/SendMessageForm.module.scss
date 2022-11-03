@@ -15,6 +15,9 @@
     height: 40px;
     box-sizing: border-box;
     margin: 3px 3px 8px 3px;
+    -webkit-text-fill-color: #8d8d8d;
+    -webkit-box-shadow: 0 0 0 1000px $formColor inset;
+    transition: background-color 5000s ease-in-out 0s;
     @include text($TitleFontFamily, 16px, 500, 1.15, #8d8d8d);
   }
 

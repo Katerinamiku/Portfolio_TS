@@ -13,7 +13,8 @@ const Button = (props:ButtonPropsType) => {
         <div className={s.btnContainer}>
             <span></span>
             {props.type === 'submit'
-                ? <button className={s.btn} type={props.type}><span>{props.text}</span></button>
+                ? <button className={s.btn} type={props.type}>
+                    <span>{props.text}</span></button>
                 : <a className={s.btn} href={props.btnHref} download={props.download} target="_blank">
                 <span>{props.text}</span>
             </a>}
